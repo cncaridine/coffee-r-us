@@ -8,6 +8,9 @@
         <nav>
            <a href="/coffee/new">Create a New Item</a>
          </nav>
+         <form action="/coffee/search/<%=items.name%>?_method=PUT" method="POST">
+             <input type="submit" value="SEARCH">
+         </form>
           <div class="content">
              <ul>
                  <% for(let i = 0; i < items.length; i++){ %>
@@ -56,7 +59,7 @@
                 <!-- submit button -->
                 <input type="submit">
               </form>
-            </div>  
+            </div>
         <footer>
           <% include ../partials/footer.ejs %>
         </footer>
