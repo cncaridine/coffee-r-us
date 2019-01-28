@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Coffee Edit Page</h1>
+<form class="item" action="/coffee/<%=item.id%>?_method=PUT" method="POST">
+<!-- NOTE: the form is pre-populated with values for the server-->
+Name: <input type="text" name="name" value="<%=item.name%>"/><br/>
+Description: <input type="text" name="description" value="<%=item.description%>"/><br/>
+Image: <input type="src" alt="you can't see me" name="img" value="<%=item.img%>"/><br/>
+Price: <input type="number" name="price" value="<%=item.price%>"/><br/>
+In Stock: <input type="number" name="qty" value="<%=item.qty%>"/><br/>
+<input type="submit" name="" value="Submit Changes"/>
+</form>
+  </body>
+</html>

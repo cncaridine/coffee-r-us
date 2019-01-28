@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <ul>
+      <li>
+        Name: <%=item.name%><br>
+        Description: <%=item.description%><br>
+        <img src="<%=item.img%>" alt="you can't see me"> <br>
+        Price: <%=item.price%><br>
+        In Stock: <%=item.qty%><br>
+      </li>
+    </ul>
+    <!--  ADD EDIT FORM HERE-->
+<a href="/coffee/<%=item.id; %>/edit">Edit</a><br>
+<!--  ADD DELETE FORM HERE-->
+<form action="/coffee/<%=item.id; %>?_method=DELETE" method="POST">
+    <input type="submit" value="DELETE"/>
+</form>
+<!--back to store  -->
+<nav>
+<a href="/coffee/">Back to Store</a>
+</nav>
+<!--buy button  -->
+<% if (item.qty > 0) { %>
+<form action="/coffee/buy/<%=item.id%>?_method=PUT" method="POST">
+    <input type="submit" value="BUY">
+</form>
+<% } else { %>
+Product Out of Stock
+<% } %>
+  </body>
+</html>
