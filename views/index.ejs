@@ -5,32 +5,61 @@
     </head>
     <body>
         <h1>The Coffee Spot</h1>
-        <!-- MODAL -->
-        <!-- <button id="openModal">About Us</button>
-          <div id="modal">
-            <div id="modal-textbox">
-              <a id="close" href="#">Close</a>
-              <h1>The Coffee Spot</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-          </div> -->
         <nav>
            <a href="/coffee/new">Create a New Item</a>
          </nav>
-         <ul>
-             <% for(let i = 0; i < items.length; i++){ %>
-             <li>
-               <a href="/coffee/<%=items[i].id; %>">
-               <%=items[i].name%>
-               </a><br>
-               Description: <%=items[i].description%><br>
-               <img src="<%=items[i].img%>" alt="you can't see me"><br>
-               Price: <%=items[i].price%><br>
-               In Stock: <%=items[i].qty%><br>
-             <% } %>
-             </li>
-      <footer>
-
-      </footer>
+          <div class="content">
+             <ul>
+                 <% for(let i = 0; i < items.length; i++){ %>
+                 <li>
+                   <a href="/coffee/<%=items[i].id; %>">
+                   <%=items[i].name%>
+                   </a><br>
+                   Description: <%=items[i].description%><br>
+                   <img src="<%=items[i].img%>" alt="you can't see me"><br>
+                   Price: <%=items[i].price%><br>
+                   In Stock: <%=items[i].qty%><br>
+                 <% } %>
+                 </li>
+          </div>
+          <div class="container">
+            <!-- sidebar -->
+            <div class="sidebar"></div>
+            <!-- registration container -->
+            <div class="registration">
+              <h1>SIGN UP FOR OUR NEWSLETTER</h1>
+              <!-- START FORM -->
+              <form action="/register" method="POST">
+                <!-- fieldset for account info -->
+                <fieldset class="account-info">
+                  <!-- legend for account info -->
+                  <legend>ACCOUNT INFORMATION</legend>
+                    <!-- username -->
+                    <label>USERNAME</label>
+                    <input type="text"/>
+                    <!-- password -->
+                    <label>PASSWORD</label>
+                    <input type="text">
+                    <!-- email -->
+                    <label>E-MAIL</label>
+                    <input type="text"/>
+                </fieldset>
+                <!-- fieldset for profile info -->
+                <fieldset class="profile-info">
+                  <!-- legend for profile info -->
+                  <legend>PROFILE INFORMATION</legend>
+                    <!-- biography -->
+                    <label>BIOGRAPHY</label>
+                    <!-- textarea for larger bodies of text -->
+                    <textarea></textarea>
+                </fieldset>
+                <!-- submit button -->
+                <input type="submit">
+              </form>
+            </div>  
+        <footer>
+          <% include ../partials/footer.ejs %>
+        </footer>
+      </div>
     </body>
 </html>
