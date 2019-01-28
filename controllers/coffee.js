@@ -101,7 +101,7 @@ router.get('/:id', (req, res) => {
   coffeeProduct.findById(req.params.id, (err, foundItem) =>
   {
     res.render('show.ejs',
-    {
+  {
       item: foundItem
     })
   })
@@ -110,13 +110,13 @@ router.get('/:id', (req, res) => {
 // SEARCH ROUTE
 // resource: https://stackoverflow.com/questions/48589441/implement-a-simple-search-bar-in-express-node-js
 // ------------------
-router.get('/search:name', (req, res) => {
-  coffeeProduct.find({ name: name }, (err, items) => {
-    if (err) {
-      res.render('/coffee/search', { items: null })
-    } else {
-      res.render('/coffee/search', { items: items })
-    }
+router.get('/:search', (req, res) => {
+  coffeeProduct.find(req.params.name, (err, searchItem) =>
+  {
+    res.render('show.ejs',
+  {
+      item: SearchItem
+    })
   })
 })
 

@@ -5,64 +5,67 @@
     </head>
     <body>
         <h1>The Coffee Spot</h1>
-        <nav>
-           <a href="/coffee/new">Create a New Item</a>
-         </nav>
-         <form action="/coffee/search/<%=items.name%>?_method=PUT" method="POST">
-             <input type="submit" value="SEARCH">
-         </form>
-          <div class="content">
-             <ul>
-                 <% for(let i = 0; i < items.length; i++){ %>
-                 <li>
-                   <a href="/coffee/<%=items[i].id; %>">
-                   <%=items[i].name%>
-                   </a><br>
-                   Description: <%=items[i].description%><br>
-                   <img src="<%=items[i].img%>" alt="you can't see me"><br>
-                   Price: <%=items[i].price%><br>
-                   In Stock: <%=items[i].qty%><br>
-                 <% } %>
-                 </li>
-          </div>
-          <div class="container">
-            <!-- sidebar -->
-            <div class="sidebar"></div>
-            <!-- registration container -->
-            <div class="registration">
-              <h1>SIGN UP FOR OUR NEWSLETTER</h1>
-              <!-- START FORM -->
-              <form action="/register" method="POST">
-                <!-- fieldset for account info -->
-                <fieldset class="account-info">
-                  <!-- legend for account info -->
-                  <legend>ACCOUNT INFORMATION</legend>
-                    <!-- username -->
-                    <label>USERNAME</label>
-                    <input type="text"/>
-                    <!-- password -->
-                    <label>PASSWORD</label>
-                    <input type="text">
-                    <!-- email -->
-                    <label>E-MAIL</label>
-                    <input type="text"/>
-                </fieldset>
-                <!-- fieldset for profile info -->
-                <fieldset class="profile-info">
-                  <!-- legend for profile info -->
-                  <legend>PROFILE INFORMATION</legend>
-                    <!-- biography -->
-                    <label>BIOGRAPHY</label>
-                    <!-- textarea for larger bodies of text -->
-                    <textarea></textarea>
-                </fieldset>
-                <!-- submit button -->
-                <input type="submit">
-              </form>
+        <!-- Create New -->
+        <div class="container">
+          <nav>
+             <a href="/coffee/new">Create a New Item</a>
+          </nav>
+           <!-- SEARCH Button  -->
+          <form action="/coffee/search/<%=items.name%>?_method=PUT" method="POST">
+            <label>PASSWORD</label>
+            <input type="text">
+          </form>
+            <div class="content">
+               <ul>
+                   <% for(let i = 0; i < items.length; i++){ %>
+                   <li>
+                     <a href="/coffee/<%=items[i].id; %>">
+                     <%=items[i].name%>
+                     </a><br>
+                     Description: <%=items[i].description%><br>
+                     <img src="<%=items[i].img%>" alt="you can't see me"><br>
+                     Price: <%=items[i].price%><br>
+                     In Stock: <%=items[i].qty%><br>
+                   <% } %>
+                   </li>
             </div>
-        <footer>
-          <% include ../partials/footer.ejs %>
-        </footer>
+              <!-- sidebar -->
+              <div class="sidebar"></div>
+              <!-- registration container -->
+              <div class="registration">
+                <h1>SIGN UP FOR OUR NEWSLETTER</h1>
+                <!-- START FORM -->
+                <form action="/register" method="POST">
+                  <!-- fieldset for account info -->
+                  <fieldset class="account-info">
+                    <!-- legend for account info -->
+                    <legend>ACCOUNT INFORMATION</legend>
+                      <!-- username -->
+                      <label>USERNAME</label>
+                      <input type="text"/>
+                      <!-- password -->
+                      <label>PASSWORD</label>
+                      <input type="text">
+                      <!-- email -->
+                      <label>E-MAIL</label>
+                      <input type="text"/>
+                  </fieldset>
+                  <!-- fieldset for profile info -->
+                  <fieldset class="profile-info">
+                    <!-- legend for profile info -->
+                    <legend>PROFILE INFORMATION</legend>
+                      <!-- biography -->
+                      <label>BIOGRAPHY</label>
+                      <!-- textarea for larger bodies of text -->
+                      <textarea></textarea>
+                  </fieldset>
+                  <!-- submit button -->
+                  <input type="submit">
+                </form>
+              </div>
+          <footer>
+            <% include ../partials/footer.ejs %>
+          </footer>
       </div>
     </body>
 </html>
