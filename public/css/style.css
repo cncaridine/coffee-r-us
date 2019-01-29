@@ -6,14 +6,14 @@ body {
 .footer {
   border-style: dashed;
 }
-/* ======= CAROUSEL SECTION ======== */
-/* .carousel-container {
-  width: 70%;
+======= CAROUSEL SECTION ========
+.showCarousel-container{
+  width: 25%;
   display: flex;
   justify-content: space-around;
 }
 .carousel-images {
-  width: 80%;
+  width: 25%;
   background: #fa8d8e;
   padding: 10px;
   border-radius: 10px;
@@ -28,7 +28,7 @@ body {
 .carousel-images img:first-of-type {
   display: block;
 }
-.carousel-button {
+/* .carousel-button {
   align-self: center;
   background: #f2cd99;
   color: #888;
