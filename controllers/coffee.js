@@ -110,16 +110,19 @@ router.get('/:id', (req, res) => {
 // SEARCH ROUTE
 // resource: https://stackoverflow.com/questions/48589441/implement-a-simple-search-bar-in-express-node-js
 // ------------------
-router.get('/search/:id', (req, res) => {
+router.post('/search/', (req, res) => {
+  //console.log(req.body);
+  console.log('/search route');
   coffeeProduct.find(
     { name:
-      req.params.id }, (err, searchItem) => {
-      if (err) {
-        res.render('/search/:id', { item: null })
+      req.body.search }, (err, searchItem) => {
+      if (searchItem.length === 0) {
+        res.redirect('/coffee/')
       } else {
+        console.log(searchItem);
         res.render('show.ejs',
           {
-            item: searchItem
+            item: searchItem[0]
           })
       }
     }
