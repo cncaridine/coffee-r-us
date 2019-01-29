@@ -17,21 +17,20 @@ $('.next').on('click', () => {
     } else {
       currentImgIndex = 0
     }
+    // next img to show
+    $('.carousel-images').children().eq(currentImgIndex).css('display', 'block')
   })
-  // next img to show
-  $('.carousel-images').children().eq(currentImgIndex).css('display', 'block')
-
-// previous button
+  // previous button
 $('.previous').on('click', () => {
   // we want the current img to hide
-  $('.carousel-images').children().eq(currentImgIndex).css('display', 'none')
-  // decrement currentImgIndex
-  if (currentImgIndex > 0) {
-    currentImgIndex--
-  } else {
-    currentImgIndex = numOfImages
-  }
-  //  previous img to show
-  $('.carousel-images').children().eq(currentImgIndex).css('display', 'block')
+    $('.carousel-images').children().eq(currentImgIndex).css('display', 'none')
+    // decrement currentImgIndex
+    if (currentImgIndex > 0) {
+      currentImgIndex--
+    } else {
+      currentImgIndex = numOfImages
+    }
+    //  previous img to show
+    $('.carousel-images').children().eq(currentImgIndex).css('display', 'block')
   })
 })
