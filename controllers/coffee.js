@@ -1,6 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const coffeeProduct = require('../models/coffee.js')
+const coffeeLover = require('../views/register.js')
 
 module.exports = router
 
@@ -53,10 +54,10 @@ router.delete('/:id', (req, res) => {
 // EDIT Route
 // ------------------
 router.get('/:id/edit', (req, res)=>{
-    coffeeProduct.findById(req.params.id, (err, foundItem) => {
-        res.render(
+  coffeeProduct.findById(req.params.id, (err, foundItem) => {
+    res.render(
     		'edit.ejs',
-    		{
+        {
     			item: foundItem
     		}
     	)
@@ -66,7 +67,7 @@ router.get('/:id/edit', (req, res)=>{
 // BUY Route
 // ------------------
 router.put('/buy/:id', (req, res) => {
-  coffeeProduct.findByIdAndUpdate(req.params.id, {$inc: {qty: -1}}, {new:true}, (err, boughtProduct) => {
+  coffeeProduct.findByIdAndUpdate(req.params.id, { $inc: { qty: -1 } }, { new: true }, (err, boughtProduct) => {
     res.redirect('/coffee')
   })
 })
@@ -75,17 +76,17 @@ router.put('/buy/:id', (req, res) => {
 // ------------------
 router.put('/:id', (req, res) => {
   coffeeProduct.findByIdAndUpdate(req.params.id, req.body, { new: true }, (err, updatedModel) => {
-    res.redirect('/coffee/');
-     })
- })
+    res.redirect('/coffee/')
+  })
+})
 // INDEX Route
 // ------------------
 router.get('/', (req, res) => {
   coffeeProduct.find({}, (err, allItems) => {
     res.render('index.ejs',
     {
-      items: allItems
-    })
+        items: allItems
+      })
   })
 })
 
@@ -111,7 +112,7 @@ router.get('/:id', (req, res) => {
 // resource: https://stackoverflow.com/questions/48589441/implement-a-simple-search-bar-in-express-node-js
 // ------------------
 router.post('/search/', (req, res) => {
-  //console.log(req.body);
+  // console.log(req.body)
   console.log('/search route');
   coffeeProduct.find(
     { name:
@@ -128,11 +129,20 @@ router.post('/search/', (req, res) => {
   })
 })
 
+// Register Route
+// ------------------
+router.post('/', (req, res) => {
+  coffeeLover.create(req.body, (err, registeredCoffeeLover) => {
+    res.redirect('/coffee/')
+    // res.send(req.body)
+  })
+})
+
 // CREATE Route
 // ------------------
 router.post('/', (req, res) => {
   coffeeProduct.create(req.body, (err, createdItem) => {
-    res.redirect('/coffee/');
+    res.redirect('/coffee/')
     // res.send(req.body)
   })
 })
