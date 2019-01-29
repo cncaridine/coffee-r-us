@@ -119,14 +119,13 @@ router.post('/search/', (req, res) => {
       if (searchItem.length === 0) {
         res.redirect('/coffee/')
       } else {
-        console.log(searchItem);
+        // console.log(searchItem);
         res.render('show.ejs',
           {
             item: searchItem[0]
-          })
-      }
+      })
     }
-  )
+  })
 })
 
 // CREATE Route

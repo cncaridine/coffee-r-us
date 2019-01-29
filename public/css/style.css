@@ -3,6 +3,9 @@ body {
   background-color: gray;
 }
 
+.footer {
+  border-style: dashed;
+}
 /* ======= CAROUSEL SECTION ======== */
 /* .carousel-container {
   width: 70%;
