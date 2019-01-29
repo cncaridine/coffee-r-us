@@ -2,13 +2,9 @@
 body {
   background-color: gray;
 }
-
-.footer {
-  border-style: dashed;
-}
 ======= CAROUSEL SECTION ========
 .showCarousel-container{
-  width: 25%;
+  width: 30%;
   display: flex;
   justify-content: space-around;
 }
@@ -37,7 +33,8 @@ body {
   text-align: center;
   box-shadow: 1px 1px #fa8d8e;
 }
-.carousel-button:hover {
+*/
+/* .carousel-button:hover {
   cursor: pointer;
   background: #fa8d8e;
   box-shadow: 1px 1px #f2cd99;
