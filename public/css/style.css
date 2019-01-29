@@ -2,6 +2,10 @@
 body {
   background-color: gray;
 }
+
+.introPic {
+  width: 25%;
+}
 ======= CAROUSEL SECTION ========
 .showCarousel-container{
   width: 30%;
