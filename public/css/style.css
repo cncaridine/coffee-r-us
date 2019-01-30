@@ -1,15 +1,40 @@
-
-/* body {
-  background-color: pink;
-} */
+body {
+  background-color: #355C7D;
+}
 
 .openContainer {
-  background-color: yellow;
+  background-color: #ccc;
+  padding-left: 10px;
+}
+
+h1 {
+  font-family: 'Faster One', cursive;
+  text-align: center;
+  font-size: 8vw;
+}
+
+#openModal {
+  width: 20%;
+  height: 50px;
+  box-shadow: 2px 2px #6C5B7B;
+  font-family: 'Chewy', cursive;;
+  font-size: 2vw;
+  text-align: center;
+  color: whitesmoke;
+  border: 0px;
+  transition: 0.2s ease-in-out;
+}
+
+#openModal:hover {
+  cursor: pointer;
+  text-align: center;
+  background: #C06C84;
+  box-shadow: 2px 2px #355C7D;
 }
 
 .content {
-  width: 80%;
-  background-color: purple;
+  width: 90%;
+  background-color: #6C5B7B;
 }
 
 .contentPic {
@@ -76,20 +101,20 @@ fieldset {
 }
 legend {
   padding: 0px 10px;
-  font-family: 'Oswald';
+  font-family: 'Chewy', cursive;';
   font-weight: 500;
   color: #355C7D;
   text-align: center;
 }
 label {
-  font-family: 'Oswald';
+  font-family: 'Chewy', cursive;';
   font-weight: 200;
   color: #355C7D;
   display: block;
 }
 
 input {
-  width: 100%;
+  width: 50%;
   margin: 10px 0;
   padding: 10px;
   box-sizing: border-box;
@@ -105,7 +130,7 @@ input[type="submit"] {
   height: 50px;
   background: #C06C84;
   box-shadow: 2px 2px #355C7D;
-  font-family: 'Oswald';
+  font-family: 'Chewy', cursive;';
   font-size: 1.3em;
   color: whitesmoke;
   border: 0px;
@@ -122,7 +147,7 @@ input[type="reset"] {
   height: 50px;
   background: #6C5B7B;
   box-shadow: 2px 2px #355C7D;
-  font-family: 'Oswald';
+  font-family: 'Chewy', cursive;';
   font-size: 1.3em;
   color: whitesmoke;
   border: 0px;
@@ -187,3 +212,8 @@ p {
    margin: 75px auto;
    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
  }
+
+h8 {
+  font-family: 'Faster One', cursive;
+  color: #355C7D;
+}

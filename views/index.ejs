@@ -6,7 +6,7 @@
           <h1>The Coffee Spot</h1>
           <!-- =======Modal======== -->
           <!-- open button  -->
-          <button id="openModal">OUR STORY</button>
+          <button type="button" class="btn btn-info" id="openModal">OUR STORY</button>
           <div id="modal" class="hidden">
               <div id="modal-textbox">
               <!--close button  -->
@@ -16,17 +16,17 @@
                 <p>The number 512 is significant to The Coffee Spot. It honors the Austin area code and is a secret shoutout to my high school classmates of the Whitney Young High School division of 512! (Side Note: Young is also the alma mater of the Former First Lady, Michelle Obama.) Now back to our story, we opened our doors on May 12, 2015 offering a spot to enjoy quality coffee in a comfy neighborhood setting. Our website features mugs designed by local artists from high schools across the area. Thank you for your continued support of The Coffee Spot and Austin high school students!</p>
             </div>
           </div>
+          <!-- Create New -->
+         <button type="button" class="btn btn-info" id="openModal">
+             <a href="/coffee/new">Create a New Item</a>
+         </button>
           <!-- SEARCH Button  -->
-           <form action="/coffee/search/" method="POST">
-             <label>SEARCH</label>
-             <input type="text" name="search">
+          <form action="/coffee/search/" method="POST">
+             <!-- <label>SEARCH</label> -->
+            <input type="text" name="search" placeholder="what type of mug are you looking for?">
              <input type="submit">
-           </form>
-           <img src="/../images/devin-avery-600578-unsplash.jpg" class=introPic alt="coffee">
-           <!-- Create New -->
-           <nav>
-              <a href="/coffee/new">Create a New Item</a>
-           </nav>
+          </form>
+          <!-- <img src="/../images/devin-avery-600578-unsplash.jpg" class=introPic alt="coffee"> -->
         </div>
         <div class="mainContainer">
           <div class="container">
@@ -63,7 +63,7 @@
               <input type="password" id="password" placeholder="make it a good one"/>
               <!-- email -->
               <label>E-MAIL</label>
-              <input type="email" id="email" placeholder="cori.c@cofffee.com"/>
+              <input type="email" id="email" placeholder="cori.c@cofffee.com"/><br>
             <!-- submit button -->
             <input type="submit" value="Register">
               <!-- clear button -->
@@ -86,6 +86,6 @@
         <a href="#" class="fa fa-instagram" aria-hidden="true"></a>
         <a href="#" class="fa fa-linkedin"></a>
       </nav>
-      <h6>Designed by Cori C. 2019</h6>
+      <h8>Designed by Cori C. 2019</h8>
     </footer>
 </html>
