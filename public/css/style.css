@@ -2,7 +2,14 @@
 body {
   background-color: pink;
 }
+.content {
+  width: 80%;
+  background-color: gray;
+}
 
+.contentPic {
+  width: 50%;
+}
 .introPic {
   width: 25%;
 }

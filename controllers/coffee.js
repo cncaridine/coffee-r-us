@@ -11,27 +11,57 @@ module.exports = router
 
 // SEED Route
 // -----------------
-// route.get('/coffee/seed', async (req, res) => {
+// router.get('/seed', async (req, res) => {
 //   const newProducts =
 //     [
 //       {
-//         name: 'Beans',
-//         description: 'A small pile of beans. Buy more beans for a big pile of beans.',
-//         img: 'https://cdn3.bigcommerce.com/s-a6pgxdjc7w/products/1075/images/967/416130__50605.1467418920.1280.1280.jpg?c=2',
-//         price: 5,
-//         qty: 99
-//       }, {
-//         name: 'Bones',
-//         description: 'It\'s just a bag of bones.',
-//         img: 'http://bluelips.com/prod_images_large/bones1.jpg',
+//         name: 'The Fill Me Up... Set of 2',
+//         description: 'If you are tired of making decisions and figuring out your next step, then this mug set is for you. Sometimes coffee is needed. Other times tea is needed. Let the mug decide.',
+//         img: 'mel-poole-1160858-unsplash.jpg',
 //         price: 25,
-//         qty: 0
+//         qty: 10
 //       }, {
-//         name: 'Bins',
-//         description: 'A stack of colorful bins for your beans and bones.',
-//         img: 'http://www.clipartbest.com/cliparts/9cz/rMM/9czrMMBcE.jpeg',
-//         price: 7000,
-//         qty: 1
+//         name: 'Coffee...Coffee Set of 4',
+//         description: 'Jump start your mug collection with this variety set of mugs.',
+//         img: 'nathan-dumlao-483396-unsplash.jpg',
+//         price: 45,
+//         qty: 8
+//       }, {
+//         name: 'My Opinion',
+//         description: 'Make a great first impression with this mug. Let people know that your opinion is not optional.',
+//         img: 'steve-johnson-609098-unsplash.jpg',
+//         price: 10,
+//         qty: 5
+//       }, {
+//         name: 'Engagement Announcement',
+//         description: 'Make a great first impression with this mug. Let people know that your opinion is not optional ',
+//         img: 'jose-martinez-776749-unsplash.jpg',
+//         price: 15,
+//         qty: 3
+//       }, {
+//         name: 'Flamingos and Pigeons',
+//         description: 'Always stand out in a crowd of coffee lovers with this mug.',
+//         img: 'bryce-koch-519969-unsplash.jpg',
+//         price: 15,
+//         qty: 2
+//       }, {
+//         name: 'Coffee Plus Creativity',
+//         description: 'Nothing can stop a creative genius that has had a hot cup of Joe.',
+//         img: 'daniel-lincoln-1264346-unsplash.jpg',
+//         price: 10,
+//         qty: 5
+//       }, {
+//         name: 'No Coffee, No Go',
+//         description: 'Make a great first impression with this mug. Let people know that your opinion is not optional.',
+//         img: 'skevin-bhagat-425896-unsplash.jpg',
+//         price: 8,
+//         qty: 4
+//       }, {
+//         name: 'Simply Lovely',
+//         description: 'A coffee mug is a gift that keeps giving. It can be used for beverages or a showcase. Do not limit your coffee mug because it will not limit you.',
+//         img: 'steve-johnson-609098-unsplash.jpg',
+//         price: 12,
+//         qty: 7
 //       }
 //     ]
 //
