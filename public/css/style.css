@@ -33,10 +33,30 @@ h1 {
   box-shadow: 2px 2px #355C7D;
 }
 
-.content {
+.row {
   width: 90%;
   background-color: #6C5B7B;
+  padding: 10px;
+  margin: auto;
 }
+li {
+  list-style: none;
+  border-style: solid;
+  border-width: thin;
+  border-color: #355C7D;
+  border-radius: 25px;
+  background-color: #ccc;
+  padding: 50px 100px;
+  box-sizing: border-box;
+  font-family:'Chewy', cursive;
+  color: #355C7D;
+  font-size: 2vw;
+  text-align: center;
+}
+
+/* #listedItems {
+  background-color: gray;
+} */
 
 .contentPic {
   width: 50%;

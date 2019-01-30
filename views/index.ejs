@@ -6,7 +6,7 @@
           <h1>The Coffee Spot</h1>
           <!-- =======Modal======== -->
           <!-- open button  -->
-          <button type="button" class="btn btn-info" id="openModal">OUR STORY</button>
+          <button type="button" class="btn btn-secondary" id="openModal">OUR STORY</button>
           <div id="modal" class="hidden">
               <div id="modal-textbox">
               <!--close button  -->
@@ -17,7 +17,7 @@
             </div>
           </div>
           <!-- Create New -->
-         <button type="button" class="btn btn-info" id="openModal">
+         <button type="button" class="btn btn-secondary" id="openModal">
              <a href="/coffee/new">Create a New Item</a>
          </button>
           <!-- SEARCH Button  -->
@@ -28,20 +28,20 @@
           </form>
           <!-- <img src="/../images/devin-avery-600578-unsplash.jpg" class=introPic alt="coffee"> -->
         </div>
-        <div class="mainContainer">
-          <div class="container">
+        <div class="mainContainer-fluid">
+          <div class="container-fluid">
             <!--PRODUCTS  -->
-            <div class="content">
-               <ul>
+            <div>
+               <ul class="row">
                    <% for(let i = 0; i < items.length; i++){ %>
-                   <li>
+                   <li class="col-md-4" id="listedItems">
                      <a href="/coffee/<%=items[i].id; %>">
                      <%=items[i].name%>
                      </a><br>
                      <img class="contentPic" src="<%=items[i].img%>" alt="you can't see me"><br>
                      Price: <%=items[i].price%><br>
                    <% } %>
-                   </li>
+                 </li><br>
             </div>
         </div>
       </div>
