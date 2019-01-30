@@ -1,4 +1,3 @@
-
 console.log('carousel connected to app.js!')
 // MODAL
 $( () => {
@@ -15,9 +14,9 @@ $( () => {
   }
 
   // Event handler to close the modal or use .hide()>>>>$modal.hide()
-const closeModal = () => {
-  $modal.css('display', 'none')
-}
+  const closeModal = () => {
+    $modal.css('display', 'none')
+  }
 
 //Add event listener to Close button
 $closeBtn.on('click', closeModal)

@@ -57,7 +57,7 @@ li {
 .showProduct {
   text-align: center;
   /* align-content: center; */
-  width: 90%;
+  width: 99%;
   display: block;
 }
 
@@ -72,7 +72,8 @@ li {
   box-sizing: border-box;
   font-family:'Chewy', cursive;
   color: #355C7D;
-  font-size: 6vw;
+  font-size: 2vw;
+  font-weight: bold;
   text-align: center;
   align-items: center;
   align-content: center;
@@ -80,7 +81,7 @@ li {
   margin-right: auto;
   display: block;
   position: relative;
-  width: 95%;
+  width: 60%;
 }
 /* #listedItems {
   background-color: gray;
@@ -99,7 +100,7 @@ img {
 }
 /* ======= CAROUSEL SECTION ======== */
 .showCarousel-container{
-  width: 75%;
+  width: 50%;
   display: flex;
   justify-content: space-around;
   text-align: center;
@@ -285,4 +286,48 @@ p {
 h8 {
   font-family: 'Faster One', cursive;
   color: #355C7D;
+}
+
+/*=======EDIT PAGE===============*/
+.item {
+  font-family: 'Chewy', cursive;
+  font-size: 2vw;
+  background-color: #ccc;
+  padding-left: 10px;
+  color: #355C7D;
+}
+
+/*=======NEW PAGE===============*/
+
+/* ============= web design ==================== */
+/* ============================================= */
+@media (min-width: 800px) {
+  #openModal {
+    width: 20%;
+    height: 50px;;
+    font-size: 1vw;
+  }
+  h1 {
+    font-family: 'Faster One', cursive;
+    text-align: center;
+    font-size: .5vw;
+    color: #6C5B7B;
+  }
+  li {
+  font-size: 1vw;
+  }
+  .showList {
+  font-size: 1vw;
+  }
+  .item {
+    font-size: 1vw;
+  }
+  .showCarousel-container {
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+  }
 }
