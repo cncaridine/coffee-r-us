@@ -2,32 +2,34 @@
 <html>
       <% include ../partials/head.ejs %>
     <body>
-        <h1>The Coffee Spot</h1>
-        <!-- =======Modal======== -->
-        <!-- open button  -->
-        <button id="openModal">OUR STORY</button>
-        <div id="modal" class="hidden">
-            <div id="modal-textbox">
-            <!--close button  -->
-            <a id="close" href="#">Close</a>
-            <!-- MODAL content  -->
-            <h3>THE COFFEE SPOT</h3>
-              <p>The number 512 is significant to The Coffee spot. It honors the Austin area code and is a secret shoutout to my high school classmates in the Whitney Young High School division of 512! (Side Note: Young is also the alma mater of the Former First Lady, Michelle Obama.) Now back to our story, we opened our doors on May 12 of 2015 offering a spot to enjoy quality coffee in a comfy neighborhood setting. Our website features mugs designed by local artists from high schools across the area. Thank you for your continued support!</p>
+        <div class="openContainer">
+          <h1>The Coffee Spot</h1>
+          <!-- =======Modal======== -->
+          <!-- open button  -->
+          <button id="openModal">OUR STORY</button>
+          <div id="modal" class="hidden">
+              <div id="modal-textbox">
+              <!--close button  -->
+              <a id="close" href="#">Close</a>
+              <!-- MODAL content  -->
+              <h3>THE COFFEE SPOT</h3>
+                <p>The number 512 is significant to The Coffee Spot. It honors the Austin area code and is a secret shoutout to my high school classmates of the Whitney Young High School division of 512! (Side Note: Young is also the alma mater of the Former First Lady, Michelle Obama.) Now back to our story, we opened our doors on May 12, 2015 offering a spot to enjoy quality coffee in a comfy neighborhood setting. Our website features mugs designed by local artists from high schools across the area. Thank you for your continued support of The Coffee Spot and Austin high school students!</p>
+            </div>
           </div>
+          <!-- SEARCH Button  -->
+           <form action="/coffee/search/" method="POST">
+             <label>SEARCH</label>
+             <input type="text" name="search">
+             <input type="submit">
+           </form>
+           <img src="/../images/devin-avery-600578-unsplash.jpg" class=introPic alt="coffee">
+           <!-- Create New -->
+           <nav>
+              <a href="/coffee/new">Create a New Item</a>
+           </nav>
         </div>
         <div class="mainContainer">
-           <!-- SEARCH Button  -->
-          <form action="/coffee/search/" method="POST">
-            <label>SEARCH</label>
-            <input type="text" name="search">
-            <input type="submit">
-          </form>
-          <img src="/../images/devin-avery-600578-unsplash.jpg" class=introPic alt="coffee">
-          <!-- Create New -->
           <div class="container">
-            <nav>
-               <a href="/coffee/new">Create a New Item</a>
-            </nav>
             <!--PRODUCTS  -->
             <div class="content">
                <ul>
@@ -43,35 +45,33 @@
                    <% } %>
                    </li>
             </div>
-              <!-- sidebar -->
-              <div class="sidebar"></div>
-              <!-- registration container -->
-              <div class="registration">
-                <h1>SIGN UP FOR THE COFFEE SPOT NEWSLETTER</h1>
-                <!-- START FORM -->
-                <form action="/coffee/" method="POST">
-                  <!-- fieldset for account info -->
-                  <fieldset class="account-info">
-                    <!-- legend for account info -->
-                    <legend>ACCOUNT INFORMATION</legend>
-                      <!-- username -->
-                      <label>USERNAME</label>
-                      <input type="text"/>
-                      <!-- password -->
-                      <label>PASSWORD</label>
-                      <input type="text">
-                      <!-- email -->
-                      <label>E-MAIL</label>
-                      <input type="text"/>
-                  </fieldset>
-                  <!-- submit button -->
-                  <input type="submit">
-                </form>
-              </div>
         </div>
       </div>
     </body>
-    <footer>
+    <footer class="footer">
+      <!-- registration container -->
+      <div class="registration">
+        <p>SIGN UP FOR THE COFFEE SPOT NEWSLETTER!</p>
+        <!-- START FORM -->
+        <form action="/coffee/" method="POST">
+          <!-- fieldset for account info -->
+          <fieldset class="account-info">
+            <!-- legend for account info -->
+            <legend>ACCOUNT INFORMATION</legend>
+              <!-- username -->
+              <label>USERNAME</label>
+              <input type="text"/>
+              <!-- password -->
+              <label>PASSWORD</label>
+              <input type="text">
+              <!-- email -->
+              <label>E-MAIL</label>
+              <input type="text"/>
+          </fieldset>
+          <!-- submit button -->
+          <input type="submit">
+        </form>
+      </div>
       <a href="#">Menu |</a>
       <a href="#">Location |</a>
       <a href="#">Hours of Operation |</a>

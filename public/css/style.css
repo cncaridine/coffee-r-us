@@ -1,10 +1,18 @@
 
-body {
+/* body {
   background-color: pink;
+} */
+
+.openContainer {
+  background-color: yellow;
+}
+
+.footer {
+  background-color: gray;
 }
 .content {
   width: 80%;
-  background-color: gray;
+  background-color: purple;
 }
 
 .contentPic {
@@ -13,6 +21,7 @@ body {
 .introPic {
   width: 25%;
 }
+
 /* ======= CAROUSEL SECTION ======== */
 .showCarousel-container{
   width: 30%;
@@ -52,7 +61,7 @@ body {
   color: white;
 } */
 
-/* social media icons */
+/* ========social media icons========= */
 /* Style all font awesome icons */
 .fa {
   padding: 20px;
@@ -92,9 +101,11 @@ body {
   background: #55ACEE;
   color: white;
 }
- /* .hidden {
+
+/* =========Modal========== */
+ .hidden {
   display: none;
- } */
+ }
 
  #modal {
    background-color: rgba(0,0,0,0.5);
