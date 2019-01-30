@@ -3,6 +3,18 @@
       <% include ../partials/head.ejs %>
     <body>
         <h1>The Coffee Spot</h1>
+        <!-- =======Modal======== -->
+        <!-- open button  -->
+        <button id="openModal">About Us</button>
+        <div id="modal" class="hidden">
+            <div id="modal-textbox">
+            <!--close button  -->
+            <a id="close" href="#">Close</a>
+            <!-- MODAL content  -->
+            <h3>ABOUT THE COFFEE SHOP</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
            <!-- SEARCH Button  -->
           <form action="/coffee/search/" method="POST">
             <label>SEARCH</label>
