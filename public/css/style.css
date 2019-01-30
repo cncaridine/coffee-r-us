@@ -54,6 +54,34 @@ li {
   text-align: center;
 }
 
+.showProduct {
+  text-align: center;
+  /* align-content: center; */
+  width: 90%;
+  display: block;
+}
+
+.showList {
+  list-style: none;
+  border-style: solid;
+  border-width: thin;
+  border-color: #355C7D;
+  border-radius: 25px;
+  background-color: #ccc;
+  padding: 50px 100px;
+  box-sizing: border-box;
+  font-family:'Chewy', cursive;
+  color: #355C7D;
+  font-size: 6vw;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position: relative;
+  width: 95%;
+}
 /* #listedItems {
   background-color: gray;
 } */
@@ -61,23 +89,31 @@ li {
 .contentPic {
   width: 50%;
 }
+
 .introPic {
   width: 25%;
 }
 
+img {
+  width: 80%;
+}
 /* ======= CAROUSEL SECTION ======== */
 .showCarousel-container{
-  width: 30%;
+  width: 75%;
   display: flex;
   justify-content: space-around;
+  text-align: center;
+  align-items: auto;
+  align-self: auto;
+  padding: 25px;
 }
 .carousel-images {
-  width: 25%;
-  background: #fa8d8e;
+  width: 75%;
+  background: #C06C84;
   padding: 10px;
   border-radius: 10px;
   box-sizing: border-box;
-  box-shadow: 2px 2px #f2cd99;
+  box-shadow: 2px 2px #6C5B7B;
 }
 .carousel-images img {
   width: 100%;
@@ -87,22 +123,22 @@ li {
 .carousel-images img:first-of-type {
   display: block;
 }
-/* .carousel-button {
+.carousel-button {
   align-self: center;
-  background: #f2cd99;
+  background: #6C5B7B;
   color: #888;
   padding: 10px;
   border-radius: 50%;
   text-align: center;
-  box-shadow: 1px 1px #fa8d8e;
+  box-shadow: 1px 1px #C06C84;
 }
-*/
-/* .carousel-button:hover {
+
+.carousel-button:hover {
   cursor: pointer;
-  background: #fa8d8e;
-  box-shadow: 1px 1px #f2cd99;
+  background: #C06C84;
+  box-shadow: 1px 1px #6C5B7B;
   color: white;
-} */
+}
 
 /*====FOOTER====  */
 .footer {
@@ -184,15 +220,18 @@ input[type="reset"]:hover {
   border-style: dotted;
 } */
 
-a, p {
+a {
   color: #355C7D;
+  font-family: 'Chewy', cursive;
+  text-align: center;
 }
 
 p {
+  color: #355C7D;
+  font-family: 'Chewy', cursive;
   text-align: center;
 }
 /*------social media icons----------- */
-/* Style all font awesome icons */
 .fa {
   padding: 20px;
   font-size: 30px;
@@ -201,7 +240,6 @@ p {
   text-decoration: none;
 }
 
-/* Add a hover effect if you want */
 .fa:hover {
   opacity: 0.7;
 }
@@ -214,24 +252,34 @@ p {
    background-color: rgba(0,0,0,0.5);
  	 position: fixed;
    align-content: center;
- 	 height: 40%;
+ 	 height: 60%;
  	 width: 80%;
  	 z-index: 1;
  	 overflow: auto;
    cursor: pointer;
+   color: #355C7D;
  }
 
  #modal-textbox {
-   font-family: 'Quantico', sans-serif;
+   font-family: 'Chewy', cursive;
    font-size: 2vw;
-   color: #FF5D18;
-   /* background-color: white; */
+   color: #C06C84;
+   background-color: whitesmoke;
    align-content: center;
-   height: 30%;
-   width: 50%;
-   border-radius: 2px;
+   height: 90%;
+   width: 90%;
+   border-radius: 8px;
    margin: 75px auto;
    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+   text-overflow: ellipsis;
+   padding-left: 10px;
+   padding-right: 10px;
+ }
+
+ #close {
+  color: #F67280;
+  font-size: 20px;
+  justify-content: right;
  }
 
 h8 {
