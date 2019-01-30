@@ -49,13 +49,12 @@
     <footer class="footer">
       <!-- registration container -->
       <div class="registration">
-        <p>SIGN UP FOR THE COFFEE SPOT NEWSLETTER!</p>
         <!-- START FORM -->
         <form action="/coffee/" method="POST">
           <!-- fieldset for account info -->
           <fieldset class="account-info">
             <!-- legend for account info -->
-            <legend>ACCOUNT INFORMATION</legend>
+            <legend>SIGN UP FOR THE COFFEE SPOT NEWSLETTER!</legend>
               <!-- username -->
               <label>NAME</label>
               <input type="text" placeholder="Cori C."/>
@@ -65,16 +64,15 @@
               <!-- email -->
               <label>E-MAIL</label>
               <input type="email" id="email" placeholder="cori.c@cofffee.com"/>
+            <!-- submit button -->
+            <input type="submit" value="Register">
+              <!-- clear button -->
+            <input type="reset" value="Clear">
           </fieldset>
-          <!-- submit button -->
-          <input type="submit" value="Register">
-          <!-- clear button -->
-          <input type="reset" value="Clear">
         </form>
       </div>
       <nav class="nav nav-pills flex-column flex-sm-row">
-        <a class="flex-sm-fill text-sm-center nav-link active" href="#">Site Map</a>
-        <a class="flex-sm-fill text-sm-center nav-link" href="#">Menu</a>
+        <a class="flex-sm-fill text-sm-center nav-link" id="profile-tab" data-toggle="pill" href="#menu" role="tab" aria-controls="menu" aria-selected="true">Menu</a>
         <a class="flex-sm-fill text-sm-center nav-link" href="#">Location</a>
         <a class="flex-sm-fill text-sm-center nav-link" href="#">Hours of Operation</a>
         <a class="flex-sm-fill text-sm-center nav-link" href="#">Events</a>

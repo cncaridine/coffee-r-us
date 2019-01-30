@@ -60,28 +60,31 @@
 
 /*====FOOTER====  */
 .footer {
-  background-color: gray;
+  background-color: #ccc;
 }
 
-.registration {
-  border-style: dashed;
-}
+/* .registration {
+  width: 98%;
+  text-align: center;
+} */
 
 fieldset {
-  border: 1px solid #ccc;
+  border: 1px solid gray;
   padding: 20px;
-  margin: 20px 0;
+  margin: 20px 20px;
+  text-align: center;
 }
 legend {
   padding: 0px 10px;
   font-family: 'Oswald';
   font-weight: 500;
-  color: var(--purple);
+  color: #355C7D;
+  text-align: center;
 }
 label {
   font-family: 'Oswald';
   font-weight: 200;
-  color: var(--bright-pink);
+  color: #355C7D;
   display: block;
 }
 
@@ -90,19 +93,18 @@ input {
   margin: 10px 0;
   padding: 10px;
   box-sizing: border-box;
-  border: 1px solid var(--dusty-blue);
+  border: 1px solid #355C7D;
 }
 input:focus {
-  /* the outline property selects the default blue border that shows up on inputs. giving it a value of 0 gets rid of it */
   outline: 0;
-  border: 1px solid var(--purple);
+  border: 1px solid #C06C84;
 }
 
 input[type="submit"] {
-  width: 100%;
+  width: 20%;
   height: 50px;
-  background: var(--purple);
-  box-shadow: 2px 2px var(--bright-blue);
+  background: #C06C84;
+  box-shadow: 2px 2px #355C7D;
   font-family: 'Oswald';
   font-size: 1.3em;
   color: whitesmoke;
@@ -111,12 +113,37 @@ input[type="submit"] {
 }
 input[type="submit"]:hover {
   cursor: pointer;
-  background: var(--bright-blue);
-  box-shadow: 2px 2px var(--purple);
+  background: #355C7D;
+  box-shadow: 2px 2px #6C5B7B;
 }
 
-.nav {
+input[type="reset"] {
+  width: 20%;
+  height: 50px;
+  background: #6C5B7B;
+  box-shadow: 2px 2px #355C7D;
+  font-family: 'Oswald';
+  font-size: 1.3em;
+  color: whitesmoke;
+  border: 0px;
+  transition: 0.2s ease-in-out;
+}
+input[type="reset"]:hover {
+  cursor: pointer;
+  background: #355C7D;
+  box-shadow: 2px 2px #C06C84;
+}
+
+/* .nav {
   border-style: dotted;
+} */
+
+a, p {
+  color: #355C7D;
+}
+
+p {
+  text-align: center;
 }
 /*------social media icons----------- */
 /* Style all font awesome icons */
@@ -131,14 +158,6 @@ input[type="submit"]:hover {
 /* Add a hover effect if you want */
 .fa:hover {
   opacity: 0.7;
-}
-
-/* .socialMedia {
-  text-align: center;
-} */
-
-h6 {
-
 }
 /* =========Modal========== */
  .hidden {
