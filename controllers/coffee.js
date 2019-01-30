@@ -131,7 +131,7 @@ router.post('/search/', (req, res) => {
 
 // Register Route
 // ------------------
-router.post('/', (req, res) => {
+router.post('/register', (req, res) => {
   coffeeLover.create(req.body, (err, registeredCoffeeLover) => {
     res.redirect('/coffee/')
     // res.send(req.body)
@@ -141,7 +141,10 @@ router.post('/', (req, res) => {
 // CREATE Route
 // ------------------
 router.post('/', (req, res) => {
+  console.log('string');
+  console.log(req.body);
   coffeeProduct.create(req.body, (err, createdItem) => {
+  console.log(err);
     res.redirect('/coffee/')
     // res.send(req.body)
   })
