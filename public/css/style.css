@@ -103,10 +103,9 @@ img {
   width: 50%;
   display: flex;
   justify-content: space-around;
-  text-align: center;
-  align-items: auto;
-  align-self: auto;
   padding: 25px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .carousel-images {
   width: 75%;
@@ -323,11 +322,15 @@ h8 {
     font-size: 1vw;
   }
   .showCarousel-container {
-    width: 25%;
+    width: 40%;
     display: flex;
     justify-content: space-around;
     margin-left: auto;
     margin-right: auto;
     padding: 25px;
+  }
+  #modal {
+    height: 80%;
+    width:  70%;
   }
 }
