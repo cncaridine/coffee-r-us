@@ -12,13 +12,13 @@ The MVC (Models, Views, Controllers) file structure was used to create an one mo
 Limited platform for high school students to show case their hand-made pottery, specifically mugs.
 
 ## Purpose:
-The app provides a platform to showcase their artistic skills and collect money to donate to local nonprofits.
+The app provides a platform to showcase students' artistic skills and use the proceeds to donate to local nonprofits.
 
 ## Targeted Users:
 Coffee mugs lovers and/or art lovers.
 
 ## Unsolved Problems:
-All of the planned functionality was successfully coded. There were some styling components that were abandoned - creating equal sized divs for products on the index route.
+All of the planned functionality was successfully coded.
 
 ## Technologies Used:
 ###  *HTML
