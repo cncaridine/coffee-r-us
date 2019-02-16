@@ -17,8 +17,8 @@ The app provides a platform to showcase students' artistic skills and use the pr
 ## Targeted Users:
 Coffee mugs lovers and/or art lovers.
 
-## Unsolved Problems:
-All of the planned functionality was successfully coded.
+## Unsolved Problems/Additional Functionality:
+Add a functioning shopping cart. Adjust the styling for website design to better reflect the mobile design. Create equal sized divs. 
 
 ## Technologies Used:
 ###  *HTML
