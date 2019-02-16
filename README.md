@@ -21,11 +21,11 @@ Coffee mug lovers and/or art lovers.
 Add a functioning shopping cart. Adjust the styling for website design to better reflect the mobile design. Create equal sized divs. 
 
 ## Technologies Used:
-###  *HTML
-###  *CSS
-###  *JavaScript
-###  *jQuery
-###  *Node.js
-###  *Mongoose
-###  *Express
-###  *EJS
+###  - HTML
+###  - CSS
+###  - JavaScript
+###  - jQuery
+###  - Node.js
+###  - Mongoose
+###  - Express
+###  - EJS
